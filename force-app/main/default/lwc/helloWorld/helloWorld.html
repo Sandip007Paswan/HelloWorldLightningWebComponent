@@ -1,0 +1,17 @@
+<template>
+  <div  class="element-size">
+     <lightning-card  title="Hello World Component...."> 
+      
+      <div class="element-size">
+       <lightning-input name="First_Name" label="Enter first Name" placeholder="Please Enter Your First Name ....." onchange={handleInputChange}></lightning-input>
+       <lightning-input name="Last_Name" label="Enter last Name" placeholder="Please Enter Your Last Name ....." onchange={handleInputChange}></lightning-input>
+      </div>
+      <p if:true={ShowNameMessage}>The OnChange Occure in FullName: {name} </p>
+     </lightning-card>
+
+     
+    <!--<p slot="footer" >Card Footer</p>-->  
+     </div>
+     
+ 
+</template>

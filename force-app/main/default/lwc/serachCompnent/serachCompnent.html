@@ -1,0 +1,25 @@
+<template>
+    <div  class="element-size">
+       <lightning-card  title="Search here Component...." > 
+          
+       <div class="element-size">
+         <lightning-input name="First_Name" label="Enter first Name" placeholder="Please Enter Your First Name ....." onchange={handleInputChange}></lightning-input>
+         <lightning-input name="Last_Name" label="Enter last Name" placeholder="Please Enter Your Last Name ....." onchange={handleInputChange}></lightning-input>
+         <p if:true={ShowNameMessage}>The OnChange Occure in FullName: {name} </p>
+       </div>
+          
+
+          <lightning-button variant="brand" label="Search" title="Primary action" onclick={handleClick} class="slds-m-left_small slds-align_absolute-center"></lightning-button>
+
+         
+       </lightning-card>
+        
+            
+        
+       
+      <!--<p slot="footer" >Card Footer</p>-->  
+    </div>
+       
+   
+  </template>
+

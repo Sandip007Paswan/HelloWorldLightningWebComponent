@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <targets><target>lightning__RecordPage</target>
+             <target>lightning__HomePage</target>
+    </targets>
+      <targetConfigs><targetConfig targets="lightning__RecordPage">
+        <objects>
+            <object>Account</object>
+            <object>Opportunity</object>
+        </objects>
+        <property name="name" type="String" /> 
+       <property name="count" type="Integer" />
+      </targetConfig></targetConfigs>
+    <isExposed>true</isExposed>
+</LightningComponentBundle>

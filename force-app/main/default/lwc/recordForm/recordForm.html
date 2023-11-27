@@ -1,0 +1,26 @@
+<!-- <template>
+    <lightning-record-form 
+        object-api-name="Employee1__c"
+        record-id="a055g000007daHeAAI"
+        layout-type="Compact"
+        columns="2"
+        mode="edit"  
+    ></lightning-record-form>
+</template> -->
+
+<template>
+    <lightning-input label="Phone Number" onchange={HandleChange}></lightning-input>
+     <lightning-record-form 
+        object-api-name="Account"
+        record-id={recordId}
+        fields={Nameof_field_Array}
+        layout-type="Compact"
+        columns="2"
+        mode="edit"  
+        onsubmit={handelSubmit}
+    ></lightning-record-form> 
+   <h1>How can make a component configrable:</h1>
+    Here We can Exposed Some custom properties:{name}
+    <br>
+    Count of Record Show : {count}
+</template> 

@@ -1,0 +1,14 @@
+<template>
+      <lightning-card title="Create Record Without Apex">
+        <div class="slds-card">
+            <lightning-input label="Account Id" disabled value={accountId}> </lightning-input>
+            <lightning-input label="Account Name" onchange={handleNameChange}> </lightning-input>
+            <lightning-input label="Account Number" onchange={handlenumberChange}> </lightning-input>
+            <lightning-input label="Type" onchange={handleTypeChange}> </lightning-input>
+            <lightning-input label="Amount" onchange={handleAmountChange} type="number"> </lightning-input>
+            <lightning-input label="Phone Number" onchange={handlePhoneChange} type="number"> </lightning-input>
+            <lightning-button label="create Account" variant="brand" onclick={createAccountHandle} class="slds-button"></lightning-button>
+        </div>
+
+      </lightning-card>
+</template>

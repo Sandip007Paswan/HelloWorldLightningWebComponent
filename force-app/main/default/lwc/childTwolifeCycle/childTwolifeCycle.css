@@ -1,0 +1,9 @@
+:host {
+    --slds-c-button-brand-color-background: purple;
+    --slds-c-button-brand-color-border: purple;
+    /* Other CSS custom properties here */
+  }
+  .slds-button {
+    padding: 16px;
+    margin-left: 10px;
+}

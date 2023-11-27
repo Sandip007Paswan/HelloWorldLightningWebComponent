@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Parent LWC" icon-name="standard:account">  
+        <lightning-input class="slds-p-horizontal_small"
+                         label="Set counter"
+                         type="number"
+                         min="0"
+                         max="100000"
+                         value={startCounter}
+                         onchange={handleStartChange}
+        
+        ></lightning-input>
+
+        <lightning-button label="Add 100 to counter"
+                          icon-name="utility:add"
+                          onclick={handleMaximizeCounter}
+                          variant="brand"
+                          style="margin-top:10px;" 
+        >
+        </lightning-button>
+          
+       <c-child-lwc counter={startCounter}></c-child-lwc> <!--  here counter is prperty which is use in child lwc and its decorated by @api 
+                                                          here changing value startCounter assign in counter-->
+
+     </lightning-card>
+
+</template>

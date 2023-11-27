@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-box">
+        <h2 class="header">Basic Input Time</h2>
+        <lightning-input type="time" name="input3" label="Time field with placeholder"
+        placeholder="type here..."></lightning-input>
+       
+</div>
+    <div class="slds-box1">  
+          <lightning-input type="color" name="input-color" label="Favorite color"></lightning-input>
+          <lightning-button variant="base" label="Base" title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+    </div>
+    <div>
+        <div onkeyup={handleKeyUp}>   
+            <lightning-input name="enter-search"  label="Search when user hits the 'enter' key" type="search"> </lightning-input>
+        </div>
+        <p if:true={serchLet}> Searched for {serchLet}! </p>
+    </div>
+</template>

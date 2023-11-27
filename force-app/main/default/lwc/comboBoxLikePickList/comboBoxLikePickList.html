@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="ComboBoxDemo Lerning" class="card-size">
+        <lightning-combobox label="Status"  
+                            value={value} 
+                            placeholder="Select Account"
+                            options={optionsObject} 
+                            onchange={handlechange}>
+
+        </lightning-combobox>
+    </lightning-card>
+
+    <div style="color: rgb(33, 7, 229);">The Account Id is : {value} </div>
+</template>

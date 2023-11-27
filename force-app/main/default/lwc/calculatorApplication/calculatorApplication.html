@@ -1,0 +1,17 @@
+<template>
+    <div> <h1> My Calcualtor </h1> </div>
+    <div>
+        <lightning-input type ="number" name="num1" label="Enter number 1" onchange={handleNum1} placeholder="Enter here number...."></lightning-input>
+        <lightning-input type ="number" name="num2" label="Enter number 2"  onchange={handleNum2} placeholder="Enter here number...."></lightning-input>
+    </div>
+    <div>
+       <lightning-button variant="brand" label="ADD" title="Primary action" onclick={callAddition} class="slds-m-left_x-small"></lightning-button>
+       <lightning-button variant="brand" label="SUB" title="Primary action" onclick={callSubscraption} class="slds-m-left_x-small"></lightning-button>
+       <lightning-button variant="brand" label="MUL" title="Primary action" onclick={callMultification} class="slds-m-left_x-small"></lightning-button>
+       <lightning-button variant="brand" label="SUB" title="Primary action" onclick={callDivision} class="slds-m-left_x-small"></lightning-button>
+    </div>
+    <div>
+       
+           <b>The Result of Above calculation is: {Result}</b>
+    </div>
+</template>

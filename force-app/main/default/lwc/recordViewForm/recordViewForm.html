@@ -1,0 +1,32 @@
+<!-- <template>
+    <lightning-card title="Record View Practice.....">
+      
+       <lightning-record-view-form 
+             record-id="a055g000007daHeAAI"
+             object-api-name="Employee1__c"
+             density="auto">
+           <lightning-output-field field-name="First_Name__c"></lightning-output-field>
+       </lightning-record-view-form> 
+       
+     
+    </lightning-card>
+</template> -->
+
+
+<template>
+    <lightning-card title="Record View Practice.....">
+        <!-- record-view-form -->
+       <lightning-record-view-form 
+             record-id={recordId}
+             object-api-name={ObjectApiName}
+             density="Compact">
+           <!-- onload function is active when page refresh or valuechages -->
+           <lightning-output-field field-name={FirstName}></lightning-output-field>
+           <lightning-output-field field-name={LastName}></lightning-output-field>
+           <lightning-output-field field-name={status}></lightning-output-field>
+          
+       </lightning-record-view-form> 
+       
+     
+    </lightning-card>
+</template>

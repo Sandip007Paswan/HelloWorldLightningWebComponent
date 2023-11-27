@@ -1,0 +1,50 @@
+<template>
+  <lightning-carousel>
+    <template if:true={imageElement}>
+        <template for:each={imageElement} for:item="Celebrities">
+
+      <lightning-carousel-image
+                 key={Celebrities.id}
+                src={Celebrities.src}
+                header={Celebrities.header}
+                description={Celebrities.description} 
+                alternative-text={Celebrities.alternativet_text}
+                href={Celebrities.href}
+
+      ></lightning-carousel-image>
+    </template>
+    </template>
+  </lightning-carousel >
+
+
+
+    <!-- <lightning-carousel-image
+            src="https://thebridge.in/h-upload/2021/06/01/6501-untitled-design.webp" 
+            header="Virat Kohali"
+            description="Indian Cricketer" 
+            alternative-text="Test" >
+    </lightning-carousel-image>
+    <lightning-carousel-image
+                src="https://i.pinimg.com/736x/64/95/d0/6495d05033eb2029300f4a6fe5151952.jpg" 
+                header="Emma Watson"
+                description="Actress" 
+                alternative-text="Test"
+                href="https://en.wikipedia.org/wiki/Virat_Kohli" >
+              
+   </lightning-carousel-image>
+   
+   <lightning-carousel-image
+            src="https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_FMjpg_UX1000_.jpg" 
+            header="DeadPool"
+            description="Actress" 
+            alternative-text="Test" >
+</lightning-carousel-image>
+<lightning-carousel-image
+                src="https://i0.wp.com/s3.amazonaws.com/heights-photos/wp-content/uploads/2018/05/03141842/deadpool-2.jpg?fit=2700%2C1519&ssl=1" 
+                header="SpiderMan"
+                description="MakdiMan" 
+                alternative-text="Test" >
+   </lightning-carousel-image>
+   
+</lightning-carousel>   -->
+</template>

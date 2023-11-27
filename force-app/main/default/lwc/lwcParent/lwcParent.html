@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Parent Component" icon-name="standard:account">
+        <p class="slds-text-align_center"><b>Count :{CountValue}</b></p>
+        <!-- calling Child component in Parent// here onsubstarct and onadd is custom event -->
+       
+    
+          <c-lwc-child onsubstract={handsub}             
+                       onadd={handleadd}
+                       onmultiply={handleMulitply}
+                       > 
+
+          </c-lwc-child>
+
+       
+    </lightning-card> 
+
+   
+   
+</template>

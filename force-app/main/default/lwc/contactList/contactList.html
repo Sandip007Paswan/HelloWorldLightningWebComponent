@@ -1,0 +1,17 @@
+<template>
+   
+    <lightning-card title="Account Record ....">
+
+         
+    <div class="bolt-Data">
+        <p>Click Search button for fetching Record:</p>
+        <p if:true={showFirstName}> First Name: {searchCriteria.firstName}</p>
+        <p if:true={showLastName}> Last Name: {searchCriteria.lastName}</p>
+        
+     <!-- <p> This is Text Data In Parent to Child ===>  {privateVar}</p> -->
+     </div>
+   </lightning-card>
+
+  
+  
+</template>

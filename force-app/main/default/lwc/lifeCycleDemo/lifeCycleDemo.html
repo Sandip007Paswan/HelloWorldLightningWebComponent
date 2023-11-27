@@ -1,0 +1,18 @@
+<template>
+    <template if:true={showchild1}>    
+         <c-childlife-cycle-demo ongrandchildevent={handleGrandChildEvent}></c-childlife-cycle-demo><br>
+    </template>
+                  <!-- <c-child-twolife-cycle></c-child-twolife-cycle> -->
+ <lightning-card title="LifeCycleDemo">
+        <lightning-button label="Click"
+                        
+                           onclick={HandleChange}
+            
+          ></lightning-button>
+          <lightning-button label="show/Hide Child"
+                           variant="brand"
+                           onclick={showHideChild1}
+                          
+          ></lightning-button>
+     </lightning-card>
+</template>

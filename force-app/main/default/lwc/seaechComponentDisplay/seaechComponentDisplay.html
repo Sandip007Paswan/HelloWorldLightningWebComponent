@@ -1,0 +1,21 @@
+<template>
+     <div> <c-serach-compnent onsearchcontact={handleSearch}></c-serach-compnent> </div> <!-- on word use then use searchcontact is a custom event -->
+    <div class="slds-data"> <c-contact-list search-criteria={recieveData} private-var="Is Passing in ContatctList" ></c-contact-list></div>   <!--here we passing parent data to child data... means here 
+                                            fetched parentdata (First and last name)  -->
+   <!--<div class="slds-change"><c-contain-account-record></c-contain-account-record></div>--> 
+       <template if:true={showing}>
+         <div class="slds-change">
+   
+            <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+            
+         </div>
+      </template>       
+       <template if:false={showing}>
+           <div class="slds-change">Record Data is Not Available....</div>
+       </template>
+       
+</template>

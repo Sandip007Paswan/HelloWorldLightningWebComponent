@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Button Card Selection">
+        <!-- <lightning-button variant="Brand" label="Show" title="Primary action" onclick={HandleClick} class="slds-m-left_x-small"></lightning-button> -->
+      <lightning-button variant="brand" label={onClickButtonLable} title="Primary action" onclick={handleClickMethod} ></lightning-button>
+    </lightning-card>
+
+   <template if:true={cardVisible}>
+      <lightning-card title="Showing Data If True">
+        {myTitle}
+              
+      </lightning-card>
+   </template>
+</template>

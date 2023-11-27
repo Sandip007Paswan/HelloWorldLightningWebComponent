@@ -1,0 +1,14 @@
+<template>
+    <lightning-card  title="For:each Loop Demo">
+
+      <template if:true={Employess.data}>
+         <template for:each={Employess.data} for:item="EmployeProperty">
+            <h3 key={EmployeProperty.Id} >{EmployeProperty.First_Name__c}</h3>
+         </template>
+      </template>
+
+      <!-- If data not coming then use this Error Option -->
+       
+      <!-- <template if:true={Employees.error}>Error mil Gaya : {Employees.error}</template> -->
+    </lightning-card>
+</template>
